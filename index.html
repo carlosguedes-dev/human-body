@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore os órgãos do corpo humano através de uma experiência visual imersiva. Plataforma profissional de anatomia e visualização médica.">
+    <title>Corpo Humano — Órgãos Vitais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegação -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="nav-logo">
+                <svg class="logo-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+                <span class="logo-text">CORPO<span class="logo-accent">HUMANO</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active" data-section="hero">INÍCIO</a></li>
+                <li><a href="#sobre" class="nav-link" data-section="sobre">SOBRE</a></li>
+                <li><a href="#orgaos" class="nav-link" data-section="orgaos">ÓRGÃOS</a></li>
+                <li><a href="#explorar" class="nav-link" data-section="explorar">EXPLORAR</a></li>
+                <li><a href="#contato" class="nav-link" data-section="contato">CONTATO</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero — Vídeo Controlado por Scroll -->
+    <section id="hero" class="hero-section">
+        <div class="hero-video-wrapper">
+            <video id="hero-video" class="hero-video" muted playsinline preload="auto">
+                <source src="hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <p class="hero-subtitle" id="hero-subtitle">ANATOMIA HUMANA</p>
+            <h1 class="hero-title" id="hero-title">
+                A CIÊNCIA DOS<br>
+                ÓRGÃOS VITAIS
+            </h1>
+            <p class="hero-description" id="hero-description">
+                Descubra a complexidade extraordinária dos órgãos que mantêm a vida. Uma jornada visual pela anatomia que revela a beleza interior do corpo humano.
+            </p>
+            <a href="#orgaos" class="hero-cta" id="hero-cta">
+                <span>EXPLORAR ÓRGÃOS</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="hero-scroll-indicator" id="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">ROLE PARA BAIXO</span>
+            <svg class="scroll-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </div>
+
+        <div class="hero-progress" id="hero-progress">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section sobre-section">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-text">
+                    <p class="section-label">SOBRE A JORNADA</p>
+                    <h2 class="section-title">A Máquina<br>Perfeita</h2>
+                    <p class="section-description">
+                        O corpo humano abriga órgãos incríveis que trabalham em perfeita sincronia. Cada órgão desempenha uma função vital, e juntos formam o sistema mais sofisticado já criado pela natureza.
+                    </p>
+                    <p class="section-description">
+                        Através de visualizações avançadas, revelamos o mundo oculto sob a pele — tornando o invisível visível e o complexo compreensível.
+                    </p>
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="78">0</span>
+                            <span class="stat-label">Órgãos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="11">0</span>
+                            <span class="stat-label">Sistemas</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="37">0</span>
+                            <span class="stat-suffix">tri</span>
+                            <span class="stat-label">Células</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-visual">
+                    <div class="about-image-card">
+                        <img src="img/heart.png" alt="Coração humano - modelo anatômico 3D" class="about-img">
+                        <div class="about-image-badge">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                            <span>Órgão mais forte</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Órgãos Principais -->
+    <section id="orgaos" class="section orgaos-section">
+        <div class="container">
+            <p class="section-label center">ÓRGÃOS VITAIS</p>
+            <h2 class="section-title center">Conheça Cada<br>Órgão Essencial</h2>
+            <p class="section-description center mx-auto">
+                Os órgãos vitais são as estruturas fundamentais que sustentam a vida. Explore cada um deles e descubra suas funções fascinantes.
+            </p>
+
+            <div class="organs-grid">
+                <!-- Coração -->
+                <div class="organ-card" id="organ-heart">
+                    <div class="organ-image-wrapper">
+                        <img src="img/heart.png" alt="Coração humano" class="organ-image">
+                    </div>
+                    <div class="organ-info">
+                        <div class="organ-tag">Sistema Circulatório</div>
+                        <h3 class="organ-name">Coração</h3>
+                        <p class="organ-desc">Bombeia cerca de 7.500 litros de sangue por dia através de 100.000 km de vasos sanguíneos. Bate aproximadamente 100.000 vezes a cada 24 horas.</p>
+                        <div class="organ-stats">
+                            <div class="organ-stat">
+                                <span class="organ-stat-value">300g</span>
+                                <span class="organ-stat-key">Peso médio</span>
+                            </div>
+                            <div class="organ-stat">
+                                <span class="organ-stat-value">100k</span>
+                                <span class="organ-stat-key">Batimentos/dia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cérebro -->
+                <div class="organ-card" id="organ-brain">
+                    <div class="organ-image-wrapper">
+                        <img src="img/brain.png" alt="Cérebro humano" class="organ-image">
+                    </div>
+                    <div class="organ-info">
+                        <div class="organ-tag">Sistema Nervoso</div>
+                        <h3 class="organ-name">Cérebro</h3>
+                        <p class="organ-desc">Centro de comando do corpo, processa bilhões de sinais por segundo. Contém 86 bilhões de neurônios conectados por trilhões de sinapses.</p>
+                        <div class="organ-stats">
+                            <div class="organ-stat">
+                                <span class="organ-stat-value">1,4kg</span>
+                                <span class="organ-stat-key">Peso médio</span>
+                            </div>
+                            <div class="organ-stat">
+                                <span class="organ-stat-value">86bi</span>
+                                <span class="organ-stat-key">Neurônios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pulmões -->
+                <div class="organ-card" id="organ-lungs">
+                    <div class="organ-image-wrapper">
+                        <img src="img/lungs.png" alt="Pulmões humanos" class="organ-image">
+                    </div>
+                    <div class="organ-info">
+                        <div class="organ-tag">Sistema Respiratório</div>
+                        <h3 class="organ-name">Pulmões</h3>
+                        <p class="organ-desc">Responsáveis pela troca gasosa vital — captam oxigênio e eliminam dióxido de carbono. Possuem uma superfície interna do tamanho de uma quadra de tênis.</p>
+                        <div class="organ-stats">
+                            <div class="organ-stat">
+                                <span class="organ-stat-value">70m²</span>
+                                <span class="organ-stat-key">Superfície</span>
+                            </div>
+                            <div class="organ-stat">
+                                <span class="organ-stat-value">20k</span>
+                                <span class="organ-stat-key">Respirações/dia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fígado -->
+                <div class="organ-card" id="organ-liver">
+                    <div class="organ-image-wrapper">
+                        <img src="img/liver.png" alt="Fígado humano" class="organ-image">
+                    </div>
+                    <div class="organ-info">
+                        <div class="organ-tag">Sistema Digestório</div>
+                        <h3 class="organ-name">Fígado</h3>
+                        <p class="organ-desc">A maior glândula do corpo humano. Realiza mais de 500 funções, incluindo desintoxicação, produção de bile e armazenamento de vitaminas.</p>
+                        <div class="organ-stats">
+                            <div class="organ-stat">
+                                <span class="organ-stat-value">1,5kg</span>
+                                <span class="organ-stat-key">Peso médio</span>
+                            </div>
+                            <div class="organ-stat">
+                                <span class="organ-stat-value">500+</span>
+                                <span class="organ-stat-key">Funções</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rins -->
+                <div class="organ-card" id="organ-kidneys">
+                    <div class="organ-image-wrapper">
+                        <img src="img/kidneys.png" alt="Rins humanos" class="organ-image">
+                    </div>
+                    <div class="organ-info">
+                        <div class="organ-tag">Sistema Urinário</div>
+                        <h3 class="organ-name">Rins</h3>
+                        <p class="organ-desc">Filtram todo o sangue do corpo mais de 30 vezes por dia, removendo toxinas e regulando o equilíbrio de água, sal e minerais.</p>
+                        <div class="organ-stats">
+                            <div class="organ-stat">
+                                <span class="organ-stat-value">180L</span>
+                                <span class="organ-stat-key">Filtrados/dia</span>
+                            </div>
+                            <div class="organ-stat">
+                                <span class="organ-stat-value">1mi</span>
+                                <span class="organ-stat-key">Néfrons</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estômago -->
+                <div class="organ-card" id="organ-stomach">
+                    <div class="organ-image-wrapper">
+                        <img src="img/stomach.png" alt="Estômago humano" class="organ-image">
+                    </div>
+                    <div class="organ-info">
+                        <div class="organ-tag">Sistema Digestório</div>
+                        <h3 class="organ-name">Estômago</h3>
+                        <p class="organ-desc">Um saco muscular que digere alimentos usando ácido clorídrico tão forte que poderia dissolver metal. Renova seu revestimento a cada 3 a 4 dias.</p>
+                        <div class="organ-stats">
+                            <div class="organ-stat">
+                                <span class="organ-stat-value">1,5L</span>
+                                <span class="organ-stat-key">Capacidade</span>
+                            </div>
+                            <div class="organ-stat">
+                                <span class="organ-stat-value">pH 2</span>
+                                <span class="organ-stat-key">Acidez</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explorar -->
+    <section id="explorar" class="section explorar-section">
+        <div class="container">
+            <div class="explorar-layout">
+                <div class="explorar-text">
+                    <p class="section-label">MERGULHE FUNDO</p>
+                    <h2 class="section-title">Explore o<br>Desconhecido</h2>
+                    <p class="section-description">
+                        Cada camada do corpo humano revela novas maravilhas. Do mundo microscópico do DNA às macroestruturas que definem nossa forma, há sempre mais a descobrir.
+                    </p>
+                    <div class="explorar-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                                    <path d="M2 12h20"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Visualização 3D Interativa</strong>
+                                <p>Explore cada órgão em três dimensões</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="3" y1="9" x2="21" y2="9"/>
+                                    <line x1="9" y1="21" x2="9" y2="9"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Exploração Camada por Camada</strong>
+                                <p>Descubra estruturas ocultas sob a pele</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Dados Médicos em Tempo Real</strong>
+                                <p>Informações detalhadas de cada sistema</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Enciclopédia Anatômica</strong>
+                                <p>Base de conhecimento completa e atualizada</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contato" class="hero-cta outline" id="explorar-cta">
+                        <span>SAIBA MAIS</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="explorar-visual">
+                    <img src="img/lungs.png" alt="Pulmões - exploração anatômica" class="explorar-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section contato-section">
+        <div class="container">
+            <div class="contato-layout">
+                <div class="contato-info">
+                    <p class="section-label">ENTRE EM CONTATO</p>
+                    <h2 class="section-title">Comece Sua<br>Exploração</h2>
+                    <p class="section-description">
+                        Pronto para mergulhar no mundo da anatomia humana? Entre em contato e inicie sua jornada de descobertas.
+                    </p>
+                    <div class="contato-details">
+                        <div class="contato-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>contato@corpohumano.com.br</span>
+                        </div>
+                        <div class="contato-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Plataforma Digital — Acesso Mundial</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contato-form" id="contato-form">
+                    <div class="form-group">
+                        <label for="form-name" class="form-label">Nome</label>
+                        <input type="text" id="form-name" class="form-input" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email" class="form-label">Email</label>
+                        <input type="email" id="form-email" class="form-input" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message" class="form-label">Mensagem</label>
+                        <textarea id="form-message" class="form-input form-textarea" placeholder="Escreva sua mensagem..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit" id="form-submit">
+                        <span>ENVIAR MENSAGEM</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand-col">
+                    <div class="footer-brand">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                        <span class="logo-text">CORPO<span class="logo-accent">HUMANO</span></span>
+                    </div>
+                    <p class="footer-disclaimer">
+                        Este site foi criado exclusivamente para fins de estudo e prática de desenvolvimento web. Não representa nenhuma empresa ou instituição.
+                    </p>
+                </div>
+                <div class="footer-info-col">
+                    <p class="footer-images-notice">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" y1="16" x2="12" y2="12"/>
+                            <line x1="12" y1="8" x2="12.01" y2="8"/>
+                        </svg>
+                        As imagens dos órgãos são meramente ilustrativas, geradas por inteligência artificial.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-credit">Desenvolvido por <strong>Carlos Guedes</strong></p>
+                <p class="footer-text">&copy; 2026 — Projeto de Estudo Pessoal</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
