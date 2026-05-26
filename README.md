@@ -1,6 +1,6 @@
 # 🫀 Corpo Humano — A Ciência dos Órgãos Vitais
 
-🔗 **[Acessar o Projeto](https://carlosguedes0007-maker.github.io/human-body/)**
+🔗 **[Acessar o Projeto](https://carlosguedes-dev.github.io/human-body/)**
 
 ## 📌 Sobre o Projeto
 Uma experiência web interativa, educacional e imersiva dedicada a explorar a complexidade dos órgãos vitais do corpo humano. O site leva o usuário a uma jornada visual através da anatomia humana, revelando dados numéricos e curiosidades biológicas em uma interface moderna e profissional.
